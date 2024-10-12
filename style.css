@@ -7,7 +7,7 @@ body{
 
 .main-design {
     border: 4px solid #8d6855;
-    width: 95%;
+    width: 800px;
     border-radius: 10px;
     background-color: #F5E8C7;
     color: #52796F;
@@ -16,7 +16,7 @@ body{
 }
 
 .text-design{
-    width: 95%;
+    width: 800px;
     margin: 10px auto 10px auto;
     border: 4px solid #8d6855 ;
     border-radius: 10px;
