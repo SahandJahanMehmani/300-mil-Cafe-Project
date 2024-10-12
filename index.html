@@ -15,7 +15,7 @@
     <body>
 
         <div id="main-head">
-            
+
             <h1>300 Mil Cafe</h1>
 
             <ul id="nav-menu">
@@ -34,20 +34,14 @@
             </ul>
         </div>
 
-        <br><br>
+
+        <h3 id="about-header" class="main-design">About 300 Mil Cafe</h3>
+        <p class="text-design">Welcome to 300 Mil, where nostalgia meets comfort. Inspired by a love for old Persian music and vintage charm, our café is a haven of timeless beauty. Every corner is filled with relics from the past-aged furniture, antique décor, and a cozy atmosphere that feels like stepping back in time. On one side, a community board allows visitors to share their thoughts and feelings, leaving behind a piece of their story. Surrounded by plants and flowers, we invite you to enjoy our specialty drinks while the melodies of old Persian songs carry you away. At 300 ml, we're not just serving coffee; we're creating memories.</p>
 
 
-        <h3 id="aboutHeader" >About 300 Mil Cafe</h3>
-        <p id="aboutText">Welcome to 300 Mil, where nostalgia meets comfort. Inspired by a love for old Persian music and vintage charm, our café is a haven of timeless beauty. Every corner is filled with relics from the past-aged furniture, antique décor, and a cozy atmosphere that feels like stepping back in time. On one side, a community board allows visitors to share their thoughts and feelings, leaving behind a piece of their story. Surrounded by plants and flowers, we invite you to enjoy our specialty drinks while the melodies of old Persian songs carry you away. At 300 ml, we're not just serving coffee; we're creating memories.</p>
+        <h2  id="menu-title" class="main-design">Cafe Menu</h2>
 
-
-        <br><br><br>
-
-        <hr>
-
-        <h2  id="menu">Cafe Menu</h2>
-
-        <table border="2" cellpadding="5" >
+        <table id="menu-table" class="main-design" >
             <tr >
                 <th rowspan="5">Menu</th>
                 <th>Warm Drinks</th>
@@ -91,23 +85,18 @@
             </tr>
         </table>
 
-        <br><br><br>
+        <h3  id="cafeInside" class="main-design">Inside the Cafe</h3>
+        <p class="text-design">café offers a warm, rustic atmosphere where vintage items and wooden furniture create a cozy, nostalgic vibe. Unique decorations like old radios, watches, and handcrafted pieces fill the space, blending the charm of the past with a creative spirit. Visitors can enjoy their drinks surrounded by plants, soft lighting, and walls adorned with personal notes and memories.</p>
 
-        <hr>
+        <div class="main-design" id="img-container">
+            <img src="Pictures/inside1.JPG" class="img-design">
+            <img src="Pictures/inside2.JPG" class="img-design">
+            <img src="Pictures/inside3.JPG" class="img-design">
+        </div>
 
-        <h3  id="cafeInside">Inside the Cafe</h3>
-        <p>café offers a warm, rustic atmosphere where vintage items and wooden furniture create a cozy, nostalgic vibe. Unique decorations like old radios, watches, and handcrafted pieces fill the space, blending the charm of the past with a creative spirit. Visitors can enjoy their drinks surrounded by plants, soft lighting, and walls adorned with personal notes and memories.</p>
-        <img src="Pictures/inside1.JPG" width="31%" height="40%">
-        <img src="Pictures/inside2.JPG" width="31%" height="40%">
-        <img src="Pictures/inside3.JPG" width="31%" height="40%">
+        <h3 id="memories" class="main-design">Your Memories</h3>
 
-        <br><br><br><br>
-
-        <hr>
-
-        <h3  id="memories">Your Memories</h3>
-
-        <table border="1">
+        <table id="memories-table" class="main-design">
             <tr>
                 <th>Sahar M</th>
                 <th>Ali R</th>
@@ -126,88 +115,83 @@
             </tr>
         </table>
 
-        <br><br><br>
+        <h3 class="main-design">Share Your Opinion</h3>
 
-        <hr>
+        <fieldset id="opinion" class="main-design">
+            <legend class="legend-text">Personal Info</legend>
 
-        <h3>Share Your Opinion</h3>
+            <div class="form-container">
+                <div id="questions">
+                    <label for="name">Your name :</label>
+                    <label for="phone">Your Phone Number :</label>
+                    <label for="email">Your Email Adress :</label>
+                    <label for="birthday">Your Birthday :</label>
+                </div>
 
-        <fieldset id="opinion">
-            <legend>Personal Info</legend>
-            <p>
-                <label for="name">Your name :</label>
-                <input type="text" name="name" id="name" placeholder="type your name" autocomplete="on" required>
-            </p>
-            <p>
-                <label for="phone">Your Phone Number :</label>
-                <input type="tel" name="phone" id="phone" placeholder="09123456789">
-            </p>
-            <p>
-                <label for="email">Your Email Adress :</label>
-                <input type="email" name="email" id="email" placeholder="mail@gmail.com" required>
-            </p>
-            <p>
-                <label for="birthday">Your Birthday</label>
-                <input type="date">
-            </p>
-            <p>
-                <label for="message"> Your Opinion :</label>
+                <div id="answers">
+                    <input type="text" name="name" id="name" placeholder="type your name" autocomplete="on" required>
+                    <input type="tel" name="phone" id="phone" placeholder="09123456789">
+                    <input type="email" name="email" id="email" placeholder="mail@gmail.com" required>
+                    <input type="date">
+                </div>
+            </div>
+
+            <div id="text-area">
+                <label for="message" id="opinion-title"> Your Opinion :</label>
+
                 <textarea name="message" id="message" cols="20" rows="5" placeholder="type your text here"></textarea>
-            </p>
-            <p>
-                <button >Submit</button>
-            </p>
+
+            </div>
+
+            <div id="fav-item">
+                <label id="fav-item-question">What is your favorite item in our cafe ?</label>
+    
+                <div id="fav-item-box">
+                    <div>
+                        <input type="checkbox" name="item" id="espresso" value="espresso">
+                        <label for="espresso">Espresso</label>
+        
+                        <input type="checkbox" name="item" id="americano" value="americano">
+                        <label for="americano">Americano</label>
+        
+                        <input type="checkbox" name="item" id="cappucino" value="cappucino">
+                        <label for="cappucino">Cappucino</label>
+        
+                        <input type="checkbox" name="item" id="latte" value="latte">
+                        <label for="latte">Latte</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="item" id="coldbrew" value="coldbrew">
+                        <label for="coldbrew">Cold Brew</label>
+        
+                        <input type="checkbox" name="item" id="iceAmericano" value="iceAmericano">
+                        <label for="iceAmericano">Ice Americano</label>
+        
+                        <input type="checkbox" name="item" id="margaritta" value="margaritta">
+                        <label for="margaritta">Margaritta</label>
+        
+                        <input type="checkbox" name="item" id="iceLatte" value="iceLatte">
+                        <label for="iceLatte">Ice Latte</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="item" id="alfredoPasta" value="alfredoPasta">
+                        <label for="alfredoPasta">Alfredo Pasta</label>
+        
+                        <input type="checkbox" name="item" id="chipsCheese" value="chipsCheese">
+                        <label for="chipsCheese">Chips & Cheese</label>
+        
+                        <input type="checkbox" name="item" id="fries" value="fries">
+                        <label for="fries">Fries</label>
+        
+                        <input type="checkbox" name="item" id="sandwich" value="sandwich">
+                        <label for="sandwich">Special Sandwich</label>
+                    </div>
+                </div>
+    
+            </div>
+
+            <button id="btn">Submit</button>
+
         </fieldset>
-
-        <br><br>
-
-        <fieldset>
-            <legend>What is your favorite item in our cafe</legend>
-            <p>
-                <input type="checkbox" name="item" id="espresso" value="espresso">
-                <label for="espresso">Espresso</label>
-
-                <input type="checkbox" name="item" id="americano" value="americano">
-                <label for="americano">Americano</label>
-
-                <input type="checkbox" name="item" id="cappucino" value="cappucino">
-                <label for="cappucino">Cappucino</label>
-
-                <input type="checkbox" name="item" id="latte" value="latte">
-                <label for="latte">Latte</label>
-            </p>
-            <p>
-                <input type="checkbox" name="item" id="coldbrew" value="coldbrew">
-                <label for="coldbrew">Cold Brew</label>
-
-                <input type="checkbox" name="item" id="iceAmericano" value="iceAmericano">
-                <label for="iceAmericano">Ice Americano</label>
-
-                <input type="checkbox" name="item" id="margaritta" value="margaritta">
-                <label for="margaritta">Margaritta</label>
-
-                <input type="checkbox" name="item" id="iceLatte" value="iceLatte">
-                <label for="iceLatte">Ice Latte</label>
-            </p>
-            <p>
-                <input type="checkbox" name="item" id="alfredoPasta" value="alfredoPasta">
-                <label for="alfredoPasta">Alfredo Pasta</label>
-
-                <input type="checkbox" name="item" id="chipsCheese" value="chipsCheese">
-                <label for="chipsCheese">Chips & Cheese</label>
-
-                <input type="checkbox" name="item" id="fries" value="fries">
-                <label for="fries">Fries</label>
-
-                <input type="checkbox" name="item" id="sandwich" value="sandwich">
-                <label for="sandwich">Special Sandwich</label>
-            </p>
-            <p>
-                <button>Submit</button>
-            </p>
-        </fieldset>
-
-
-
     </body>
 </html>
